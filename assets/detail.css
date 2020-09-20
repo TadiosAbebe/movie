@@ -80,8 +80,9 @@ main {
   color: white;
   font-weight: bolder;
   font-size: 1.2rem;
-  border-radius: 0.6rem;
+  border-radius: 0 0.6rem 0.6rem 0;
   margin-right: 0.5rem;
+  border-left: 10px solid #6aa8f7;
 }
 .gener,
 .plot,
