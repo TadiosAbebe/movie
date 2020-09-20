@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, sans-serif;
+}
+.center {
+  width: 90%;
+  margin: 0 auto;
+}
+body {
+  background-image: linear-gradient(45deg, #fb872b, #d9e021);
+}
+/* nav */
+nav {
+  background-image: linear-gradient(45deg, #fb872b, #d9e021);
+  position: sticky;
+  top: 0;
+}
+
+.icon svg {
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  top: 0.125em;
+  font-size: 1.5rem;
+  position: relative;
+  color: #393935;
+  /*! font-weight: bolder; */
+}
+/* main */
+main {
+  background-image: linear-gradient(45deg, #fb872b, #d9e021);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.thumb {
+  max-width: 100%;
+  height: auto;
+}
+.thumb {
+  border-radius: 1rem;
+}
+.thumb_section {
+  display: grid;
+  justify-content: center;
+}
+#title_small {
+  display: none;
+}
+.detail_section {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 4vw;
+  border-left: 0.5rem solid #393935;
+  padding-left: 1rem;
+  color: #393935;
+  margin: 0 0 1rem 0;
+}
+.title span {
+  font-weight: lighter;
+}
+.info p {
+  display: inline-block;
+  margin: 0.7rem 0;
+}
+.year span,
+.rating span,
+.length span,
+.gener span,
+.director span {
+  padding: 0.5rem;
+  background-color: #3d71b3;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+  margin-right: 0.5rem;
+}
+.gener,
+.plot,
+.actor,
+.trailer {
+  margin: 0.8rem 0;
+}
+.director {
+  padding: 0.5rem 0;
+}
+.overview,
+.cast,
+.trailer_title {
+  font-size: 3vw;
+  color: #393935;
+}
+.trailer_link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #3d71b3;
+  font-weight: bolder;
+  border: 2px solid #3d71b3;
+}
+.plot p,
+.actor p {
+  margin: 1rem 0;
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: none;
+    gap: 0;
+  }
+  #title_small {
+    display: block;
+  }
+  .title {
+    display: none;
+    font-size: 7vw;
+    margin: 1rem 0;
+  }
+  .overview,
+  .cast,
+  .trailer_title {
+    font-size: 6vw;
+  }
+}

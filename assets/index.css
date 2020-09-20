@@ -1,0 +1,144 @@
+:root {
+  --white: white;
+  --dark: #2c2c2c;
+  --light_text: #9b9898;
+  --light: #f4f5f9;
+  --lighter: #fcfcfc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* logo */
+
+.logo {
+  background-color: var(--dark);
+}
+
+.logo h1 {
+  text-align: center;
+  font-family: mistral;
+  font-size: 4rem;
+  color: white;
+}
+
+/* nav */
+
+nav {
+  background-color: #efefef;
+}
+
+nav ul,
+header ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li,
+header li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.8rem 0.5rem;
+}
+
+nav a,
+header a {
+  text-decoration: none;
+}
+
+nav a {
+  color: #2c2c2c;
+}
+
+/* main content */
+
+.items_wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem 0;
+}
+
+.items_wrapper a {
+  display: inline-block;
+  padding: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white);
+  text-decoration: none;
+  height: calc(100vh - 350px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* footer */
+
+footer {
+  background-color: var(--dark);
+  padding-top: 2rem !important;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 1rem;
+}
+
+footer h1 {
+  font-size: 1.3rem;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer li {
+  padding-top: 0.5rem;
+}
+
+footer a {
+  color: var(--white, white);
+  text-decoration: none;
+  background-color: var(--dark, #2c2c2c);
+  padding: 0.5rem;
+  display: inline-block;
+  width: 10rem;
+  border: 2px solid var(--white, white);
+  text-align: center;
+}
+.footer_about p {
+  margin: 0.5rem 0;
+  line-height: 1.2rem;
+  max-width: calc(90% - 160 * 2);
+}
+
+@media screen and (max-width: 600px) {
+  .items_wrapper {
+    grid-template-columns: auto;
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+  }
+
+  footer h1 {
+    text-align: center;
+  }
+
+  footer a {
+    width: 100%;
+  }
+}
